@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-div">
+        <div class="first-line">
+            <h1>Welcome Back!</h1>
+        </div>
+        <div class="second-line">
+            <h3>Sign in to check Course Details.</h3>
+        </div>
+        <form id="registrationForm">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+
+            <input type="checkbox" id="Remember Me" name="Remember Me" checked/>            
+            <label for="Remember Me">Remember Me</label><br>
+
+            <button type="submit" onclick="location.href = 'regDone.html'">Login</button><br>
+        </form>
+        <h5 class="sign-navigator">Don't have an Account? <a href="registerationForm.html">Sign up</a></h5>
+    </div>
+</body>
+</html>
