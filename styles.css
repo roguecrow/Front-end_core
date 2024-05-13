@@ -1,4 +1,3 @@
-/* Styles for the container */
 .main-div {
     max-width: 400px;
     height: fit-content;
@@ -6,7 +5,7 @@
     margin-top: 80px;
     margin-left: 50px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.3); 
+    background-color: rgba(236,236,236,255);   
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -17,17 +16,28 @@
 
 }
 
+.first-line {
+    font-family:"Trirong", serif;
+}
+
+.second-line {
+    font-family: 'CustomFontRegular', sans-serif;
+    font-size: smaller;
+    font-weight: 100;
+    font-stretch: expanded;
+}
+
 form {
     margin-top: 20px;
     margin-bottom: 20px;
     padding-right: 110px;
 }
 
-body {
+/* body {
     background-image: url('/images/360_F_310162798_6hWbaSFgDtWp4AhhaKPlTgAZUDL1c4UY.jpg');
     background-size: cover;
     background-position: center;
-}
+} */
 
 input[type="email"],
 input[type="password"] {
@@ -40,7 +50,7 @@ input[type="password"] {
 }
 
 button[type="submit"] {
-    width: 162%;
+    width: 150%;
     padding: 10px;
     background-color: #007bff;
     color: #fff;
@@ -70,4 +80,22 @@ button[type="submit"]:hover {
 
 .sign-navigator a:hover {
     text-decoration: underline;
+}
+
+/* Styles for the container */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.login-container {
+    flex: 1;
+}
+
+.image-container {
+    flex: 1;
+    background-image: url('images/login_img.jpg');
+    /* background-image: url('images/login_img-Photoroom.png-Photoroom.png'); */
+    background-size: cover;
+    background-position: center;
 }

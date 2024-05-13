@@ -1,13 +1,238 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>welcome</title>
-    </head>
-    <body style="background-color: lightblue;">
-    <center>
-        <h1>Welcome</h1>
-        <img src="/images/how-to-create-an-event-registration-form-in-wordpress.png" alt="Registration-form">
-        <h2>click <a href="registerationForm.html">  here </a> to move to registeration form.</h2>
-    </center>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Course Application</title>
+    <link rel="stylesheet" href="welcome_styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="welcomeScreen.html"><img src="images\logo\up_skiller_logo.png" alt="Logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="welcomeScreen.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="support_page.html">Support</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="about_us_page.html">About Us</a>
+                  </li>
+                  <form class="d-flex search-form" role="search">
+                    <input class="form-control me-2 search-bar" type="search" placeholder="Search Courses..." aria-label="Search">
+                    <button class="btn btn-outline-success submit-button btn-black" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>                
+                </ul>
+                <div>
+                    <button type="button" class="btn btn-light ml-5" onclick="window.location.href='login_page.html'">Login</button>
+                    <button type="button" class="btn btn-dark" onclick="window.location.href='registerationForm.html'">SignUp</button>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images\banner-2.jpg" class="d-block w-100" alt="work_banner">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="banner-title">Learning that gets you</h5>
+                    <p>Skills for your present (and your future). Get started with us.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images\banner-3.jpg" class="d-block w-100" alt="lady-banner">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="banner-title">Skills that drive you forward</h5>
+                    <p>Technology and the world of work change fast — with us, you’re faster. Get the skills to achieve goals and stay competitive.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="cards-title-container">
+        <h2>All the Courses you need in one place</h2>
+        <h4>Up Skiller supports you and makes your dream come true.</h4>
+    </div>
+    <div class="container">
+        <div class="course-cards">
+            <a href="course1.html" class="course-card">
+                <img src="images\courses\c-plus-plus.png" alt="Course 1 C++">
+                <div class="card-content">
+                    <h2>C++</h2>
+                    <p>Beginning C++ Programming - From Beginner to Beyond</p>
+                </div>
+            </a>
+            <a href="course2.html" class="course-card">
+                <img src="images\courses\java.png" alt="Course 2 Java">
+                <div class="card-content">
+                    <h2>Java</h2>
+                    <p>Java Programming for Beginners to Java Object Oriented Programming. Core Java + REST API with Spring Boot. Java 8 to 16.</p>
+                </div>
+            </a>
+            <a href="course3.html" class="course-card">
+                <img src="images\courses\Python.png" alt="Course 3 Python">
+                <div class="card-content">
+                    <h2>Python</h2>
+                    <p>100 Days of Code: The Complete Python Pro Bootcamp.</p>
+                </div>
+            </a>
+            <a href="course4.html" class="course-card">
+                <img src="images\courses\node-js.png" alt="Course 3 node-js">
+                <div class="card-content">
+                    <h2>node js</h2>
+                    <p>Master Node JS & Deno.js, build REST APIs with Node.js, GraphQL APIs, add Authentication, use MongoDB, SQL & much more!</p>
+                </div>
+            </a>
+            <a href="course4.html" class="course-card">
+                <img src="images\courses\Cybersecurity.svg" alt="Course 3 Cybersecurity">
+                <div class="card-content">
+                    <h2>Cybersecurity</h2>
+                    <p>Volume 1 : Become a Cyber Security Specialist, Learn How to Stop Hackers, Prevent Hacking, Learn IT Security & INFOSEC.</p>
+                </div>
+            </a>
+            <a href="course5.html" class="course-card">
+                <img src="images\courses\react-js.webp" alt="Course 3 react-js">
+                <div class="card-content">
+                    <h2>react js</h2>
+                    <p>Dive in and learn React.js from scratch! Learn React, Hooks, Redux, React Router, Next.js, Best Practices and way more!</p>
+                </div>
+            </a>
+            <!-- Add more course cards here -->
+        </div>
+    </div>    
+    
+    <div class="learning-tabs">
+        <h2>Learning focused on your goals</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link-tab active" id="v-pills-tab-1" data-bs-toggle="pill" href="#v-pills-content-1" role="tab" aria-controls="v-pills-content-1" aria-selected="true">
+                        <h4>Hands-on training</h4>
+                        <p1>Upskill effectively with AI-powered coding exercises, practice tests, skills assessments, labs, and workspaces.</p1>
+                    </a>
+                    <a class="nav-link-tab" id="v-pills-tab-2" data-bs-toggle="pill" href="#v-pills-content-2" role="tab" aria-controls="v-pills-content-2" aria-selected="false">
+                        <h4>Certification prep</h4>
+                        <p1>Prep for industry-recognized certifications by solving real-world challenges and earn badges along the way.</p1>
+
+                    </a>
+                    <a class="nav-link-tab" id="v-pills-tab-3" data-bs-toggle="pill" href="#v-pills-content-3" role="tab" aria-controls="v-pills-content-3" aria-selected="false">
+                        <h4>Customizable content</h4>
+                        <p1>Create tailored learning paths for team and organization goals and even host your own content and resources.</p1>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <!-- Tab 1 Content -->
+                    <div class="tab-pane fade show active" id="v-pills-content-1" role="tabpanel" aria-labelledby="v-pills-tab-1">
+                        <div class="card card-body">
+                            <img src="https://cms-images.udemycdn.com/96883mtakkm8/4kbyXne3Slx9Sfz4nTBqdf/8ac2b75db1a118f15e2fb5dfe2bb4567/desktop-hands-on-learning-2x.png" alt="Tab 1 Image">
+                        </div>
+                    </div>
+                    <!-- Tab 2 Content -->
+                    <div class="tab-pane fade" id="v-pills-content-2" role="tabpanel" aria-labelledby="v-pills-tab-2">
+                        <div class="card card-body">
+                            <img src="https://cms-images.udemycdn.com/96883mtakkm8/GUVYFTj0uwEQuJha5j7TZ/133c991fb3b3f1f93a3e842f4baa7f44/desktop-certification-prep-2x.png" alt="Tab 2 Image">
+                        </div>
+                    </div>
+                    <!-- Tab 3 Content -->
+                    <div class="tab-pane fade" id="v-pills-content-3" role="tabpanel" aria-labelledby="v-pills-tab-3">
+                        <div class="card card-body">
+                            <img src="https://cms-images.udemycdn.com/96883mtakkm8/385IhnON960Wvz50ooWIN3/d4e6738c97769258d387b3d609edaad4/desktop-customizable-2x.png" alt="Tab 3 Image">
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <div class="partners-banner_wrapper">
+        <div class="partners-banner_content">
+            <h2 class="partners-banner_heading">Trusted by many companies and millions of learners around the world</h2>
+            <ul class="ud-unstyled-list partner-logos_list">
+                <li class="partner-logos_item">
+                    <img src="https://cms-images.udemycdn.com/content/tqevknj7om/svg/volkswagen_logo.svg?position=c&amp;quality=80&amp;x.app=portals" alt="Volkswagen logo gray and white logo" loading="lazy">
+                </li>
+                <li class="partner-logos_item">
+                    <img src="https://cms-images.udemycdn.com/content/2gevcc0kxt/svg/samsung_logo.svg?position=c&amp;quality=80&amp;x.app=portals" alt="Samsung logo gray and white logo" loading="lazy">
+                </li>
+                <li class="partner-logos_item">
+                    <img src="https://cms-images.udemycdn.com/content/mueb2ve09x/svg/cisco_logo.svg?position=c&amp;quality=80&amp;x.app=portals" alt="Cisco logo gray and white logo" loading="lazy">
+                </li>
+                <li class="partner-logos_item">
+                    <img src="https://cms-images.udemycdn.com/content/ocud9ia7cf/svg/vimeo_logo.svg?position=c&amp;quality=80&amp;x.app=portals" alt="Vimeo logo gray and white logo" loading="lazy">
+                </li>
+                <li class="partner-logos_item">
+                    <img src="https://cms-images.udemycdn.com/content/bthyo156te/svg/procter_gamble_logo.svg?position=c&amp;quality=80&amp;x.app=portals" alt="Procter &amp; Gamble logo gray and white logo" loading="lazy">
+                </li>
+                <li class="partner-logos_item">
+                    <img src="https://cms-images.udemycdn.com/content/luqe0d6mx2/svg/hewlett_packard_enterprise_logo.svg?position=c&amp;quality=80&amp;x.app=portals" alt="Hewlett Packard logo gray and white logo" loading="lazy">
+                </li>
+                <li class="partner-logos_item">
+                    <img src="https://cms-images.udemycdn.com/content/siaewwmkch/svg/citi_logo.svg?position=c&amp;quality=80&amp;x.app=portals" alt="Citi logo gray and white logo" loading="lazy">
+                </li>
+                <li class="partner-logos_item">
+                    <img src="https://cms-images.udemycdn.com/content/swmv0okrlh/svg/ericsson_logo.svg?position=c&amp;quality=80&amp;x.app=portals" alt="Ericsson logo gray and white logo" loading="lazy">
+                </li>
+            </ul>
+        </div>
+    </div>   
+    <footer class="page-footer">
+        <div class="container-footer">
+            <div class="row">
+                <div class="col-sm-6 col-sm-pull-4"> 
+                    <div class="page-footer-left">
+                    <h3>@ 2024 UpSkiller.All rights reserved.</h3>
+                </div>
+            </div>
+                <div class="col-sm-2 col-sm-push-12">
+                    <div class="page-footer-right">
+                        <a href="course5.html" class="footer-link">
+                        <h3>Terms & Conditions</h3>
+                    </a>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-sm-push-12">
+                    <div class="page-footer-right">
+                        <a href="course5.html" class="footer-link">
+                            <h3>Privacy Policy</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-sm-push-12">
+                    <div class="page-footer-right">
+                        <a href="course5.html" class="footer-link">
+                            <h3>Cookies Policy</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </footer>    
+    
+</body>
 </html>
+
+
+
